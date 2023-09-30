@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>My Project</title>
+  <style>
+body {
+  background-color: black;
+}
+</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Handlee">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+<style>
+  h1,h3 {
+  font-family: "Audiowide", sans-serif;
+  color: blue;
+}
+  body {
+  font-family: "Handlee", sans-serif;
+  color: white;
+}
+h2 {
+  font-family: "Lora", sans-serif;
+  color: white;
+  text-decoration: underline;
+}
+div.a {
+  font-size: 20px;
+}
+  </style>
+  <body>
+  
+  <div class="w3-container">
+    <div class="w3-container w3-sofia">
+    <h1 class="w3-xxxlarge">My Portfolio</h1>
+  </div>
+  
+  <div class="w3-bar w3-blue">
+    <button class="w3-bar-item w3-button" onclick="openCity('London')">About</button>
+    <button class="w3-bar-item w3-button" onclick="openCity('Paris')">My Work</button>
+    <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">Contact</button>
+  </div>
+  
+  <div id="London" class="w3-container w3-display-container city">
+    <span onclick="this.parentElement.style.display='none'"
+    class="w3-button w3-large w3-display-topright">&times;</span>
+    <h2>About Me</h2>
+    <div class="a">Hi, my name is Michelle Njoku. I'm a student at Bowie Sate University and I aspire to be a video game designer.</div>
+    <h2>Skills</h2>
+    <h3>Communication</h3>
+    
+    <div class="w3-light-grey">
+  <div class="w3-blue" style="height:24px;width:70%"></div>
+</div><br>
+
+<h3>Programming</h3>
+
+<div class="w3-light-grey">
+  <div class="w3-blue" style="height:24px;width:55%"></div>
+</div><br>
+
+<h3>Creativity</h3>
+
+<div class="w3-light-grey">
+  <div class="w3-blue" style="height:24px;width:80%"></div>
+</div>
+  </div>
+  
+  <div id="Paris" class="w3-container w3-display-container city" style="display:none">
+    <span onclick="this.parentElement.style.display='none'"
+    class="w3-button w3-large w3-display-topright">&times;</span>
+    <h2></h2>
+    <p></p> 
+  </div>
+  
+  <div id="Tokyo" class="w3-container w3-display-container city" style="display:none">
+    <span onclick="this.parentElement.style.display='none'"
+    class="w3-button w3-large w3-display-topright">&times;</span>
+    <h2></h2>
+    <p></p>
+  </div>
+  
+  <script>
+  function openCity(cityName) {
+    var i;
+    var x = document.getElementsByClassName("city");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    document.getElementById(cityName).style.display = "block";  
+  }
+  </script>
+  
+  </body>
+  </html>  
